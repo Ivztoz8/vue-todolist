@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favico.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Vue-To-Do</title>
+</head>
+<body>
+    <div id="root">
+       <header>
+           <div class="container px-5">
+               <div class="row justify-content-center px-5 mt-2 ">
+                   <img src="./assets/img/tag.png" class="img-fluid px-5" alt="To do list logo">
+               </div>
+            </div>
+       </header>
+       <main>
+        <div class="container py-3">
+            <div class="d-flex row justify-content-center align-items-center py-2">
+                <div class="d-flex col-3 justify-content-center align-items-center">
+                    <div class="input-group">
+                        <input class="form-control" type="text" aria-describedby="inputGroupFileAddon04" placeholder="Nuovo Todo" v-model="todoadd">
+                        <button class="btn btn-outline-primary" type="button" id="inputTodo" @click="clickAddTodo"><i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mbg-1 py-2 borrad">
+                <div class="col pt-2">
+                    <h4 class="text-center text-decoration-underline">
+                        To do list:
+                    </h4>
+                    <div class="col pt-2">
+                        <h4 class="text-start" id="todoView">
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./assets/js/main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+</body>
+</html>
